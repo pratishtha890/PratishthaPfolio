@@ -56,7 +56,7 @@ header ul li a{
 }
 .content{
     position: relative;
-    max-width: 700px;
+    /* max-width: 700px; */
 }
 .content h2{
     font-size: 5.5em;
@@ -88,9 +88,15 @@ header ul li a{
     border-radius: 10px;
     font-weight: 600;
 }
+.content button:hover{
+    background: rgb(219, 195, 147);
+}
 .content button.chat{
     background: transparent;
-    color: #333;
+    color: #333
+}
+.content button.chat:hover{
+    background:#b9b8b8 ;
 }
 .dayNight{
     position:absolute;
@@ -128,4 +134,254 @@ header ul li a{
 {
     color: #fff;
 
+}
+body{
+    position: relative !important;
+    overflow: visible !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff; /* Matches the white theme of your page */
+    margin: 10% auto; /* Center the modal */
+    padding: 30px;
+    border-radius: 10px; /* Smooth edges */
+    border: none; /* No border */
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* The Close Button */
+.close {
+    color: #666; /* Light grey to match your theme */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: orange; /* Highlight color when hovered */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Contact Information Styling */
+.contact-info {
+    text-align: center;
+    color: #333; /* Primary text color */
+}
+
+.contact-info h2 {
+    font-size: 1.8em; /* Bigger font size for heading */
+    font-weight: 700; /* Make the heading bold */
+    color: orange; /* Matching the theme color */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+.contact-info p {
+    font-size: 1.2em; /* Regular size for content */
+    margin: 15px 0; /* Spacing between elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500; /* Regular weight for content */
+}
+
+.contact-info a {
+    color: #0073b1; /* LinkedIn blue for the link */
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500; /* Regular weight for links */
+    font-size: 1em; /* Regular size for links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Style icons with matching size and colors */
+.contact-info i {
+    font-size: 24px; /* Slightly smaller size for icons */
+    color: orange; /* Matches the orange accent of your page */
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* About Me Section Styling */
+.about-section {
+    background-color: #fff; /* Matches the light theme of the page */
+    padding: 50px 100px;
+    color: #333; /* Primary text color */
+    transition: 0.5s;
+}
+
+.about-section h2 {
+    color: orange; /* Heading color matches existing content */
+    font-weight: 600; /* Similar font weight */
+    margin-bottom: 20px;
+}
+
+
+.about-section p {
+    font-size: 1.2em; /* Matching font size with your current content */
+    color: #666; /* Same text color as the current section */
+    line-height: 1.6; /* Improves readability */
+    /* margin-bottom: 20vh; */
+}
+.about-section .workex h2,.about-section  .edu h2,.about-section  .skills h2{
+    font-size: 2.5em ; /* Slightly larger for company names */
+    color:#B67500;
+}
+.about-section h4 {
+    font-size: 1.5em; /* Slightly larger for company names */
+    color: #ffa500; /* Highlights in the existing accent color */
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 20px; /* Spacing between list items */
+}
+
+.skills-list, .experience-list, .education-list {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.skills-list li, .experience-list li, .education-list li {
+    font-size: 1em; /* Consistent with the rest of the content */
+    color: #666; /* Text color similar to other content */
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0; /* Light border to separate items */
+}
+
+.about-section ul li:last-child {
+    border-bottom: none; /* No border on the last item */
+}
+
+.about-section .skills-list li {
+    font-weight: 500; /* Adds emphasis to skills */
+}
+
+.about-section .education-list h4 {
+    color: #333; /* Keep the education heading aligned with the rest of the text */
+}
+
+.banner.night .about-section,
+
+.banner.night .about-section p,
+.banner.night .about-section h4,
+.banner.night .about-section .skills-list li,
+.banner.night .about-section .experience-list li,
+.banner.night .about-section .education-list li {
+    color: #fff; /* Text color in night mode */
+    background-color: #333; /* Dark background for night mode */
+   
+}
+.banner.night .content .about-section h2{
+    color: #ffa500;
+}
+.banner.night .content .about-section h4{
+    color: #b6760081;
+}
+
+.skills h2 {
+    color: #ffa500;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background-color: #dfa130;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #e69500;
+    cursor: pointer;
+}
+
+.skills-list li i {
+    font-size: 1.5em;
+}
+
+
+
+.edu h2 {
+    color: #ffa500;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.education-list h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.education-list p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+}
+
+.education-list h4 i {
+    color: #ffa500;
+    font-size: 1.5em;
 }
